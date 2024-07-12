@@ -4,6 +4,7 @@ import { ViewModel } from "../model/viewModel";
 import { grey } from "@mui/material/colors";
 import { TodoListItem } from "./item";
 import { Todo } from "@/shared/api/todo/models";
+import { PREFIX_CLASS_NAME_FOR_MENU } from "@/entities/menus/const";
 
 const TodoList = ({ todo }: { todo: Todo[] }) => {
   return (
@@ -35,6 +36,7 @@ export const TodoListByDate = ({ todoByDate }: ViewModel) => {
             }}
           >
             <Typography
+              className={PREFIX_CLASS_NAME_FOR_MENU + date}
               variant="body1"
               component="h5"
               sx={{
