@@ -6,6 +6,7 @@ import type { ViewModel } from "../model/viewModel";
 import type { Todo } from "@/shared/api/todo/models";
 import type { Note } from "@/shared/api/note/models";
 import { NoteItem } from "@/features/note/listItem";
+import { PREFIX_CLASS_NAME_FOR_MENU } from "@/entities/menus/const";
 
 interface Props {
   todoNote: (Todo | Note)[];
@@ -57,7 +58,7 @@ export const TodoWithNote = ({ todoNote, ...props }: ViewModel) => {
             }}
           >
             <Typography
-              className={`date-${date}`}
+              className={PREFIX_CLASS_NAME_FOR_MENU + date}
               variant="body1"
               component="h5"
               sx={{
