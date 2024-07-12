@@ -3,6 +3,7 @@ import { grey } from "@mui/material/colors";
 import { ViewModel } from "../model";
 import { TodoInput } from "@/features/todo/add/ui/input";
 import { AddButton } from "./button";
+import { NoteInput } from "@/entities/note/ui/input";
 
 export const AddItemForm = (model: ViewModel) => {
   return (
@@ -24,6 +25,7 @@ export const AddItemForm = (model: ViewModel) => {
       onSubmit={model.onSubmit}
     >
       <TodoInput />
+      <NoteInput />
       <AddButton />
     </Box>
   );

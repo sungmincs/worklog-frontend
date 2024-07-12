@@ -1,6 +1,6 @@
-import { TodoList } from "@/features/todo/list";
 import { AddItemForm } from "@/widgets/addItemForm";
 import { Layout } from "@/widgets/layout";
+import { TodoWithNote } from "@/widgets/todoNoteList";
 import { Box } from "@mui/material";
 
 export const Home = () => {
@@ -16,7 +16,7 @@ export const Home = () => {
             p: 6
           }}
         >
-          <TodoList />
+          <TodoWithNote />
           <AddItemForm />
         </Box>
       </Layout.Content>
