@@ -7,11 +7,13 @@ import "../index.css";
 import { ToastContainer } from "react-toastify";
 
 import { ThemeProvider } from "@/app/providers/theme";
+import { NotFound } from "@/shared/ui/Error/notFound";
 
 export const Route = createRootRouteWithContext<{
   queryClient: QueryClient;
 }>()({
-  component: RootComponent
+  component: RootComponent,
+  notFoundComponent: NotFound
 });
 
 function RootComponent() {
