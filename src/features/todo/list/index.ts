@@ -1,4 +1,4 @@
-import { TodoList as Component } from "./ui";
+import { TodoListByDate as Component } from "./ui";
 
 import { useViewModel } from "./model/viewModel";
 
